@@ -1,7 +1,7 @@
 #!/bin/sh
 
 deploy_backend () {
-  img_path="gcr.io/traansmission-1bdc/backend";
+  img_path="gcr.io/ieisite-163707/backend";
   path=$img_path:v$1;
   namespace=$2
   echo "Deploying backend image to namespace $2:" $path
@@ -10,7 +10,7 @@ deploy_backend () {
 }
 
 deploy_portal () {
-  img_path="gcr.io/traansmission-1bdc/portal";
+  img_path="gcr.io/ieisite-163707/portal";
   path=$img_path:v$1;
   namespace=$2
   echo "Deploying portal image to namespace $2:" $path
